@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from DeepBlue.views import helloworld
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('hello1',helloworld.helloworld)
 ]
